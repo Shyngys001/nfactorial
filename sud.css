@@ -1,0 +1,71 @@
+body {
+    color : green;
+    background-image: linear-gradient(90deg, #000000 1.98%, #D778B3 43.89%, #5E6BF5 87.36%);
+}
+
+center{
+}
+
+#mysudoku {
+    width : 5%;
+    height : 3vmin;
+    font-weight : bold;
+    margin-bottom : 5px;
+    background-color : white;
+}
+
+#startSudoku {
+    width : 100%;
+    height : 10vmin;
+    margin-top : 5px;
+    font-weight : bold;
+    border-radius : 9px;
+    background-color : white;
+    width: 50%;
+}
+
+#sudokuTimer {
+    width : 100%;
+    display : none;
+    color : rgb(237, 154, 0);
+    font-size : 5vmin;
+    text-align : center;
+    background-image: linear-gradient(90deg, #21201d 1.98%, #040303 43.89%, #000c92 87.36%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+}
+
+table {
+    margin : auto;
+    text-align : center;
+    table-layout : fixed;
+    border : thick solid white;
+    border-collapse : collapse;
+}
+td {
+    width : 10vmin;
+    border : 1px solid white;
+}
+tr {
+    height : 10vmin;
+    font-size : 5vmin;
+}
+
+#controls {
+    margin : 3px;
+    display : none;
+    text-align : center;
+}
+
+#controls button {
+    margin : 3px;
+    color : black;
+    height : 9vmin;
+    border-radius : 11px;
+    background-color : white;
+}
+
+button:focus, button:active {
+    outline : none;
+}
