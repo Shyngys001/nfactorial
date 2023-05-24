@@ -134,10 +134,13 @@ tr {
 #controls button {
     margin : 15px;
     color : black;
-    border-radius : 11px;
+    width: 5%;
+    height: 40px;
     background-color : white;
 }
 
 button:focus, button:active {
     outline : none;
 }
+
+
