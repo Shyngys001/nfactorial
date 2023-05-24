@@ -6,13 +6,20 @@
     </head>
     <body>
         <center>
-            <select id="mysudoku">
-                <option value="22">4x4</option>
-                <option value="23">6x6</option>
-                <option value="24">8x8</option>
-                <option value="33">9x9</option>
-            </select>
-            <button id="startSudoku" onclick="startSudoku()">Solve Sudoku!</button>
+            <div class="center">
+                <img src="logo.jpg" alt="" id="img">
+                <select id="mysudoku">
+                    <option value="22" style="text-align: center;">Select the size of sudoku</option>
+                    <option value="22">4x4</option>
+                    <option value="23">6x6</option>
+                    <option value="24">8x8</option>
+                    <option value="33">9x9</option>
+                </select>
+                <div class="btns">
+                    <button id="startSudoku" onclick="startSudoku()">Solve Sudoku!</button>
+                </div>    
+            </div>
+            
             <br>
             <div id="sudokuTimer"><i>Time Taken</i>:<b> 0 </b>Seconds</div>
             <br>
