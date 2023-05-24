@@ -1,17 +1,77 @@
 body {
-    color : green;
     background-image: linear-gradient(90deg, #000000 1.98%, #D778B3 43.89%, #5E6BF5 87.36%);
+    
 }
 
-center{
+
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 50%;
+    padding: 30px;
+
+}
+
+
+.btns{
+    display: flex;
+    flex-direction: column;
+    width: 530px;
+    /* height: 47px; */
+    margin: 0 auto;
+    margin-top: 50px;
+    row-gap: 20px;
+    padding: 5px;
+}
+
+button, #mysudoku{
+    cursor: pointer;
+
+}
+
+.btn{
+    display: block;
+    margin: 0 auto;
+    width: 330px;
+    height: 47px;
+    background: #FFA500;
+    border-radius: 52px;
+    border: none;
+    /* box-shadow: 0px 1px 3px; */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: #FFFFFF;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    
 }
 
 #mysudoku {
     width : 5%;
-    height : 3vmin;
     font-weight : bold;
     margin-bottom : 5px;
     background-color : white;
+    display: block;
+    margin: 0 auto;
+    width: 330px;
+    height: 47px;
+    background: #FFA500;
+    border-radius: 52px;
+    border: none;
+    /* box-shadow: 0px 1px 3px; */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: #FFFFFF;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+img{
+    margin: auto;
+    width: 20%;
+    border-radius: 50%;
 }
 
 #startSudoku {
@@ -22,6 +82,19 @@ center{
     border-radius : 9px;
     background-color : white;
     width: 50%;
+    display: block;
+    margin: 0 auto;
+    width: 330px;
+    height: 47px;
+    background: #FFA500;
+    border-radius: 52px;
+    border: none;
+    /* box-shadow: 0px 1px 3px; */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: #FFFFFF;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 #sudokuTimer {
@@ -30,7 +103,7 @@ center{
     color : rgb(237, 154, 0);
     font-size : 5vmin;
     text-align : center;
-    background-image: linear-gradient(90deg, #21201d 1.98%, #040303 43.89%, #000c92 87.36%);
+    background-image: linear-gradient(90deg, #000000 1.98%, #780068 43.89%, #a4a4a4 87.36%);
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
@@ -59,9 +132,8 @@ tr {
 }
 
 #controls button {
-    margin : 3px;
+    margin : 15px;
     color : black;
-    height : 9vmin;
     border-radius : 11px;
     background-color : white;
 }
