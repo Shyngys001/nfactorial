@@ -192,6 +192,7 @@ sudoku9[4] = [
 ];
 
 function startSudoku() {
+    // document.getElementById("img").style.display = "none";
     var size_sudoku = document.getElementById("mysudoku").value.split("");
     sudoku_x = size_sudoku[0];
     sudoku_y = size_sudoku[1];
@@ -262,7 +263,7 @@ function drawSudoku() {
                 if (!this.innerHTML.startsWith("<i>") && this.style.backgroundColor !== "red") {
                     for (var x = 0; x < sudoku_size; x++)
                         for (var y = 0; y < sudoku_size; y++)
-                            document.getElementById("cell_" + x + "_" + y).style.backgroundColor = "black";
+                            document.getElementById("cell_" + x + "_" + y).style.backgroundColor = "grey";
                     this.style.backgroundColor = "yellow";
                     document.getElementById("curr_x").value = this.id.slice(5).split("_")[0];
                     document.getElementById("curr_y").value = this.id.slice(5).split("_")[1];
